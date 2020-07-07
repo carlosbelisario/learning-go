@@ -17,13 +17,13 @@ func main() {
     stringsAndConst()
 }
 
-/** review this function, why the result is -127*/
+
 func integer() {
     var myint int8
     for i := 0; i < 129; i++ {
         myint += 1
     }
-    fmt.Println(myint) // prints out -127
+    fmt.Println(myint) // prints out -127 because the integer is overflow
 }
 
 func castingIntegers() {
